@@ -26,7 +26,7 @@ public class RewardsProgram {
         // Read in a transaction:  "Customer", "Date", "purchase amount" *one line*
         try{
         
-            Scanner document = new Scanner(new File("C:\\Users\\ambar\\Documents\\RewardsData.txt"));
+            Scanner document = new Scanner(new File(args[0]));
             HashMap<String,Map<String,Integer>> customerPoints = new HashMap<>();
         
             while(document.hasNext()){
